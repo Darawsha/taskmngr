@@ -34,7 +34,3 @@ Works in all modern browsers (Chrome, Firefox, Safari, Edge).
 ## Author
 
 Built by [Ameed Darawsha](https://ameed.me/)
-
-## License
-
-MIT
