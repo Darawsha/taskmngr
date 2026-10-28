@@ -22,34 +22,32 @@
       <header class="header">
         <div class="header-content">
           <div class="logo">
+            <h1>Taskmngr</h1>
+          </div>
+          <p class="tagline">Organize your workflow</p>
+        </div>
+        <div class="header-actions">
+          <button
+            class="btn-theme-toggle"
+            id="themeToggle"
+            type="button"
+            aria-label="Toggle theme"
+          >
+            Dark mode
+          </button>
+          <button class="btn-new-task" id="addTaskBtn">
             <svg
-              class="logo-icon"
               viewBox="0 0 24 24"
               fill="none"
               stroke="currentColor"
               stroke-width="2"
             >
-              <rect x="3" y="3" width="7" height="9" rx="1" />
-              <rect x="14" y="3" width="7" height="5" rx="1" />
-              <rect x="14" y="12" width="7" height="9" rx="1" />
-              <rect x="3" y="16" width="7" height="5" rx="1" />
+              <line x1="12" y1="5" x2="12" y2="19" />
+              <line x1="5" y1="12" x2="19" y2="12" />
             </svg>
-            <h1>Taskmngr</h1>
-          </div>
-          <p class="tagline">Organize your workflow</p>
+            New Task
+          </button>
         </div>
-        <button class="btn-new-task" id="addTaskBtn">
-          <svg
-            viewBox="0 0 24 24"
-            fill="none"
-            stroke="currentColor"
-            stroke-width="2"
-          >
-            <line x1="12" y1="5" x2="12" y2="19" />
-            <line x1="5" y1="12" x2="19" y2="12" />
-          </svg>
-          New Task
-        </button>
       </header>
 
       <div class="search-bar">
@@ -117,22 +115,6 @@
       <footer class="footer">
         <div class="footer-content">
           <p class="footer-tip">Drag tasks between columns to update status</p>
-          <div class="footer-author">
-            <span>Built by</span>
-            <a href="https://ameed.me/" target="_blank" rel="noopener"
-              >Ameed Darawsha</a
-            >
-            <span class="separator">|</span>
-            <a href="https://github.com/Darawsha" target="_blank" rel="noopener"
-              >GitHub</a
-            >
-            <a
-              href="https://www.linkedin.com/in/darawsha/"
-              target="_blank"
-              rel="noopener"
-              >LinkedIn</a
-            >
-          </div>
         </div>
       </footer>
     </div>
@@ -171,6 +153,14 @@
               rows="3"
               placeholder="Add more details..."
             ></textarea>
+          </div>
+          <div class="field">
+            <label for="taskDeadline">Deadline</label>
+            <input
+              type="datetime-local"
+              id="taskDeadline"
+              placeholder="Select deadline"
+            />
           </div>
           <div class="field">
             <label for="taskStatus">Status</label>
